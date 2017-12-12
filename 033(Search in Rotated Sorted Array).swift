@@ -56,6 +56,22 @@ class Solution {
         
         return -1;
     }
+    
+    //效率比较低的版本，用系统sort函数
+    func search2(_ nums: [Int], _ target: Int) -> Int {
+        if (nums.count == 0)
+        {
+            return -1;
+        }
+        
+        let findIndex = nums.index { (find) -> Bool in
+            return find == target
+        }
+        if (findIndex != nil) {
+            return findIndex!
+        }
+        return -1;
+    }
 }
 
 let sol = Solution();
