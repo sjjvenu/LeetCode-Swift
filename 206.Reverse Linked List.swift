@@ -20,9 +20,8 @@ public class ListNode {
 class Solution {
     //利用数组将指针存储起来，然后逆序访问数组，构造一个反向链表，时间复杂度o(2n),空间复杂度o(1)
     func reverseList(_ head: ListNode?) -> ListNode? {
-        if (head == nil)
-        {
-            return nil;
+        guard head = head else {
+            return nil
         }
         var revList:ListNode? = nil;
         var listArray = [ListNode]();

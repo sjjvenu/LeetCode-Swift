@@ -10,8 +10,7 @@ import Foundation
 
 class Solution {
     func search(_ nums: [Int], _ target: Int) -> Int {
-        if (nums.count == 0)
-        {
+        guard nums.count > 0 else {
             return -1;
         }
         //用二分法查找旋转点，即最小值所在索引

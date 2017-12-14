@@ -13,8 +13,7 @@ class Solution {
     func findSubstring(_ s: String, _ words: [String]) -> [Int] {
         let startTime = NSDate()
         
-        if words.count == 0
-        {
+        guard words.count > 0 else {
             return [];
         }
         
