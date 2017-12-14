@@ -57,7 +57,7 @@ class Solution {
     nil nil nil nil
 */
 
-//方法二将二叉树用nil补为完全二叉树，并标记有数值的左右节点，因为无论除了完全二叉树使用哪种遍历方式都不能确定一颗树为另一颗树的子集
+//方法二将二叉树用nil补全，并标记有数值的左右节点，因为无论除了完全二叉树使用哪种遍历方式都不能确定一颗树为另一颗树的子集
 class Solution2 {
     func convert2String(node:TreeNode?) -> String {
         if (node == nil)
