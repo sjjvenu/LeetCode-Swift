@@ -1,10 +1,3 @@
-//
-//  main.swift
-//  LeetCode-Swift
-//
-//  Created by sjjvenu on 28/01/2018.
-//  Copyright © 2018 com.sjjvenu. All rights reserved.
-//
 
 import Foundation
 

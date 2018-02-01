@@ -1,10 +1,3 @@
-//
-//  main.swift
-//  testSwitCommandLineTool
-//
-//  Created by tdx on 2017/12/12.
-//  Copyright © 2017年 tdx. All rights reserved.
-//
 
 import Foundation
 
