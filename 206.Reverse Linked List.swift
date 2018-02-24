@@ -56,6 +56,30 @@ class Solution {
         }
         return pre
     }
+    
+    //递归逆序
+    func reverseList3(_ head: ListNode?) -> ListNode? {
+        if (head == nil)
+        {
+            return nil;
+        }
+        
+        let p = head;
+        let q = reverseList(head?.next);
+        p?.next = nil;
+        if q != nil {
+            var tailq = q;
+            while tailq!.next != nil {
+                tailq = tailq!.next;
+            }
+            tailq!.next = p;
+        }
+        else {
+            return p;
+        }
+        
+        return q;
+    }
 }
 
 let sol = Solution();
